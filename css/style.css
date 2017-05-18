@@ -71,12 +71,13 @@ animation-direction: alternate;
 .title {
   position: absolute;
   top:50%;
+  width:40%;
 }
 
 .title h1 {
   color: Crimson;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 10px;
