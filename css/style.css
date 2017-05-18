@@ -39,6 +39,7 @@ html, body {
   margin:auto;
   height:500px;
   width:50%;
+  display:box;
 }
 
 #backimage img {
@@ -79,7 +80,7 @@ animation-direction: alternate;
   top: 450px;
   width:40%;
   margin-left:0;
-  border: 5px solid green;
+  border: 5px solid blue;
 }
 
 .main h1 {
