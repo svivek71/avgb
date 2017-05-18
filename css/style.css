@@ -12,8 +12,7 @@ html, body {
 .nav {
   list-style-type: none;
   position:fixed;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin:0 15%;
   top:0;
   width: 100%;
   padding: 20px 0;
