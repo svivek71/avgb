@@ -38,7 +38,6 @@ html, body {
 
 #main img {
   position:absolute;
-  clear: both;
   top: 10%;
    border: 5px solid purple;
   -webkit-transition: opacity 1s ease-in-out;
@@ -102,7 +101,8 @@ animation-direction: alternate;
 }
 
 .supporting {
-  border: 5px solid pink;
+  margin-top:5%;
+  border: 5px solid red;
   padding-top: 30px;
   padding-bottom: 30px;
   display:block;
