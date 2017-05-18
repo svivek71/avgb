@@ -101,6 +101,7 @@ animation-direction: alternate;
 }
 
 .supporting {
+  border: 5px solid pink;
   padding-top: 30px;
   padding-bottom: 30px;
 }
