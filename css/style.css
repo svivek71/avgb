@@ -38,8 +38,9 @@ html, body {
 
 #main img {
   position:absolute;
+  clear: both;
   top: 10%;
-   border: 5px solid blue;
+   border: 5px solid purple;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
