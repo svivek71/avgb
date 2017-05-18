@@ -39,13 +39,12 @@ html, body {
   margin:auto;
   height:500px;
   width:50%;
-  display:block;
 }
 
 #backimage img {
   position:absolute;
    height:500px;
-   border: 5px solid red;
+   border: 5px solid blue;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
