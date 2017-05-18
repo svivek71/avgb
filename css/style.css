@@ -101,8 +101,8 @@ animation-direction: alternate;
 }
 
 .supporting {
-  margin: 10px 10px;;
-  border: 5px solid yellow;
+  margin: 10% 10%;;
+  border: 5px solid pink;
   padding-top: 30px;
   padding-bottom: 30px;
   display:block;
