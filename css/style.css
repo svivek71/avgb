@@ -29,13 +29,6 @@ html, body {
   font-size: 12px;
   text-transform: uppercase;
 }
-
-main {
-  height:auto;
-  display:block;
-  position:relative;
-  border: 5px solid green;
-}
   
 #mainimage {
   height:auto;
@@ -47,7 +40,7 @@ main {
 #mainimage img {
   position:absolute;
   top: 10%;
-   border: 5px solid red;
+  border: 5px solid red;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
