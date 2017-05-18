@@ -25,14 +25,14 @@ html, body {
   text-transform: uppercase;
 }
 
-#major {
+#main {
   height:auto;
   display:block;
   margin:auto;
   width:50%;
 }
 
-#major img {
+#main img {
   position:absolute;
    border: 5px solid red;
   -webkit-transition: opacity 1s ease-in-out;
@@ -56,7 +56,7 @@ html, body {
     }
   }
 
-#major img.top {
+#main img.top {
 animation-name: biFadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
@@ -64,13 +64,13 @@ animation-duration: 10s;
 animation-direction: alternate;
 }
 
-.main {
+.title {
   position: absolute;
   top:50%;
-  border: 5px solid red;
+  border: 5px solid pink;
 }
 
-.main h1 {
+.title h1 {
   color: Crimson;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
