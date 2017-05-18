@@ -73,11 +73,10 @@ animation-direction: alternate;
   width:40%;
   top:50%;
   margin: 0 auto;
-  border: 5px solid red;
 }
 
 .title h1 {
-  color: Pink;
+  color: Crimson;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 40px;
