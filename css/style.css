@@ -33,13 +33,14 @@ html, body {
 #main {
   height:auto;
   display:block;
-  margin:auto;
+  margin:10% auto;
   width:50%;
 }
 
 #main img {
+  position:absolute;
   top: 10%;
-   border: 5px solid purple;
+   border: 5px solid red;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
