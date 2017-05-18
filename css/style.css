@@ -11,6 +11,7 @@ html, body {
 
 .nav {
   list-style-type: none;
+  display:block;
   position:fixed;
   margin:0 15%;
   top:0;
