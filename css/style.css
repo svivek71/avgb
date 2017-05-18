@@ -24,6 +24,7 @@ html, body {
   font-weight: 600;
   font-size: 12px;
   margin-right: 25px;
+  margin-bottom: 100px;
   text-transform: uppercase;
 }
 
@@ -36,7 +37,7 @@ html, body {
 
 #main img {
   position:absolute;
-   border: 5px solid green;
+   border: 5px solid pink;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
