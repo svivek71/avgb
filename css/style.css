@@ -30,14 +30,15 @@ html, body {
   text-transform: uppercase;
 }
 
-#main {
+#mainimage {
   height:auto;
   display:block;
   margin:auto;
   width:50%;
+  position: relative;
 }
 
-#main img {
+#mainimage img {
   position:absolute;
   top: 10%;
    border: 5px solid red;
@@ -62,7 +63,7 @@ html, body {
     }
   }
 
-#main img.top {
+#mainimage img.top {
 animation-name: biFadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
