@@ -70,10 +70,10 @@ animation-direction: alternate;
 
 .title {
   position: absolute;
-  width:50%;
+  width:40%;
   top:50%;
   margin: 0 auto;
-  border: 5px solid pink;
+  border: 5px solid red;
 }
 
 .title h1 {
