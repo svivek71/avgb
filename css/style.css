@@ -18,7 +18,7 @@ html, body {
   width: 100%;
   padding: 20px 0;
   overflow-y: auto;
-  border: 5px solid blue;
+  border: 5px solid pink;
 }
 
 .nav li {
