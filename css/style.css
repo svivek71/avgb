@@ -44,7 +44,7 @@ html, body {
 #backimage img {
   position:absolute;
    height:500px;
-   border: 5px solid red
+   border: 5px solid blue
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -79,7 +79,7 @@ animation-direction: alternate;
   top: 450px;
   width:40%;
   margin-left:inherit;
-  border: 5px solid red;
+  border: 5px solid blue;
 }
 
 .main h1 {
