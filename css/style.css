@@ -34,7 +34,6 @@ html, body {
 
 #major img {
   position:absolute;
-   display:block;
    border: 5px solid green;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
