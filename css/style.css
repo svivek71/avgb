@@ -17,7 +17,6 @@ html, body {
   width: 100%;
   padding: 20px 0;
   overflow-y: auto;
-  border: 5px solid pink;
 }
 
 .nav li {
@@ -40,7 +39,6 @@ html, body {
 #mainimage img {
   position:absolute;
   top: 10%;
-  border: 5px solid red;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -73,7 +71,6 @@ animation-direction: alternate;
 .title {
   position: absolute;
   top:50%;
-  border: 5px solid pink;
 }
 
 .title h1 {
@@ -90,7 +87,6 @@ animation-direction: alternate;
 .invisible {
   height:550px;
   visibility:hidden;
-  border: 5px solid brown;
 }
 
 .btn-default {
@@ -109,7 +105,6 @@ animation-direction: alternate;
 
 .supporting {
   margin: 0 10%;
-  border: 5px solid pink;
   padding-top: 30px;
   padding-bottom: 30px;
   display:block;
@@ -118,7 +113,6 @@ animation-direction: alternate;
 .supporting .col {
   float: left;
   width: 32%;
-  border: 5px solid orange;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
@@ -158,7 +152,7 @@ animation-direction: alternate;
 table {
   height: 40%;
   left: 10%;
-  margin: 20px auto;
+  margin: 10% auto;
   overflow-y: scroll;
   position: static;
   width: 80%;
