@@ -23,6 +23,7 @@ html, body {
 .nav li {
   color: Azure;
   display: inline;
+  margin: 25px 25px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 12px;
