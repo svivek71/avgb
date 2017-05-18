@@ -68,7 +68,7 @@ animation-direction: alternate;
 .main {
   position: absolute;
   top:50%;
-  border: 5px solid pink;
+  border: 5px solid red;
 }
 
 .main h1 {
