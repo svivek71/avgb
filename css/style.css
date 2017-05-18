@@ -4,6 +4,7 @@ html, body {
 }
 
 .container {
+  border: 5px solid pink;
   max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -11,6 +12,7 @@ html, body {
 
 .nav {
   list-style-type: none;
+  border: 5px solid blue;
   padding: 20px 0;
   overflow-y: auto;
   position:fixed;
