@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>First Business</title>
+  </head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="backimage">
+    <img class="bottom" src="/images/seattle-skyline-thomas-hughes.jpg" />
+    <img class="top" src="/images/free-vector-seattle-city-skyline.jpg" />
+ </div>
+
+  <div class="jumbotron">
+    <div class="container">  
+      <div class="main">
+        <h1>Arushi's First Business Venture</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="supporting">
+    <div class="container">
+
+      <div class="col">
+        <h2>Think</h2>
+        <p>Make your brain explode!</p>
+        <a class="btn-default" href="https://en.wikipedia.org/wiki/Brown_bear" target = "_blank">Learn more</a>
+      </div>
+
+      <div class="col">
+        <h2>Design</h2>
+        <p>Pretty earrings</p>
+        <a class="btn-default" href="#">Learn more</a>
+      </div>
+
+      <div class="col">
+        <h2>Practical</h2>
+        <p>Coasters</p>
+        <a class="btn-default" href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
