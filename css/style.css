@@ -32,12 +32,12 @@ html, body {
 #major {
   margin:auto;
   height:auto;
-  width:50%;
+  width:100%;
 }
 
 #major img {
   position:absolute;
-   border: 5px solid blue;
+   border: 5px solid red;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -70,7 +70,7 @@ animation-direction: alternate;
 .main {
   position: absolute;
   top: 50%;
-  width:50%;
+  width:100%;
   border: 5px solid red;
 }
 
