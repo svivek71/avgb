@@ -28,13 +28,13 @@ html, body {
 #major {
   height:auto;
   display:block;
-  margin:auto;
+ /* margin:auto;*/
   width:50%;
 }
 
 #major img {
   position:absolute;
-   border: 5px solid green;
+   border: 5px solid red;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
