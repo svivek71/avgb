@@ -30,6 +30,13 @@ html, body {
   text-transform: uppercase;
 }
 
+main {
+  height:auto;
+  display:block;
+  position:relative;
+  border: 5px solid green;
+}
+  
 #mainimage {
   height:auto;
   display:block;
