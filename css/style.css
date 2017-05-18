@@ -32,7 +32,7 @@ html, body {
 #major {
   margin:auto;
   height:auto;
-  width:100%;
+  width:50%;
 }
 
 #major img {
@@ -71,7 +71,7 @@ animation-direction: alternate;
 .main {
   position: absolute;
   top: 50%;
-  width:100%;
+  width:50%;
   border: 5px solid pink;
 }
 
