@@ -88,7 +88,6 @@ animation-direction: alternate;
 }
 
 .invisible {
-  position: relative;
   top: 20%;
   border: 5px solid brown;
 }
