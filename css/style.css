@@ -87,6 +87,12 @@ animation-direction: alternate;
   text-align: center;
 }
 
+.invisible {
+  position: relative;
+  top: 20%;
+  border: 5px solid brown;
+}
+
 .btn-default {
   border: 1px solid #333;
   color: #000;
