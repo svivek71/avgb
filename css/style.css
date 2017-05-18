@@ -70,10 +70,10 @@ animation-direction: alternate;
 
 .main {
   position: absolute;
-  top: 450px;
+  top: 70%;
   width:40%;
   margin: auto;
-  border: 5px solid red;
+  border: 5px solid green;
 }
 
 .main h1 {
