@@ -35,13 +35,13 @@ html, body {
   height: 500px;
 } */
 
-#backimage {
+#major {
   margin:auto;
   height:500px;
   width:50%;
 }
 
-#backimage img {
+#major img {
   position:absolute;
    height:500px;
    border: 5px solid blue;
@@ -77,9 +77,9 @@ animation-direction: alternate;
 .main {
   position: absolute;
   top: 450px;
-  !--width:40%;
-  !--margin-left:inherit;
-  border: 5px solid blue;
+  /* width:40%;
+  margin-left:inherit; */
+  border: 5px solid red;
 }
 
 .main h1 {
@@ -90,7 +90,7 @@ animation-direction: alternate;
   margin-top: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
-   text-align: center;
+  text-align: center;
 }
 
 .btn-default {
