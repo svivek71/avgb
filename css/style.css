@@ -70,23 +70,6 @@ animation-duration: 10s;
 animation-direction: alternate;
 }
 
-.title {
-  position: absolute;
-  top:50%;
-  border: 5px solid pink;
-}
-
-.title h1 {
-  color: Crimson;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .btn-default {
   border: 1px solid #333;
   color: #000;
