@@ -37,7 +37,6 @@ html, body {
 
 #major img {
   position:absolute;
-   height:500px;
    border: 5px solid blue;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -72,7 +71,7 @@ animation-direction: alternate;
   position: absolute;
   top: 50%;
   width:50%;
-  border: 5px solid pink;
+  border: 5px solid red;
 }
 
 .main h1 {
