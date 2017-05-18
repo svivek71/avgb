@@ -71,7 +71,7 @@ animation-direction: alternate;
   position: absolute;
   top: 50%;
   width:100%;
-  border: 5px solid red;
+  border: 5px solid green;
 }
 
 .main h1 {
