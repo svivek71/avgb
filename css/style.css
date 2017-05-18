@@ -3,11 +3,11 @@ html, body {
   padding: 0;
 }
 
-/* .container {
+ .container {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-} */
+} 
 
 .nav {
   list-style-type: none;
