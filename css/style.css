@@ -110,7 +110,7 @@ animation-direction: alternate;
 .supporting .col {
   float: left;
   width: 32%;
-  border: 5px solid yellow;
+  border: 5px solid orange;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
