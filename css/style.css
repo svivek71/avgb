@@ -69,11 +69,10 @@ animation-direction: alternate;
 }
 
 .title {
-  position: relative;
+  position: absolute;
   top:50%;
-  width:40%;
-  margin: 0 auto;
-  border: 5px solid pink;
+  margin: 50% auto;
+  border: 5px solid red;
 }
 
 .title h1 {
