@@ -196,5 +196,6 @@ th, td {
 }
 
 .footer {
+  display: block;
   margin: auto;
 }
