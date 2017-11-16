@@ -142,7 +142,8 @@ animation-direction: alternate;
     color: Crimson;
     text-decoration: none;
   }
-  a:hover {
+
+a:hover {
     color: hotpink;
     text-decoration: none;
   }
@@ -198,4 +199,5 @@ th, td {
 .footer {
   display: block;
   margin: auto;
+  width: 50%;
 }
