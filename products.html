@@ -101,25 +101,23 @@ function validateForm() {
 }
 
 window.onload = function() {
-    var Q1 = sessionStorage.getItem('Q1');
-    /*if (Q1 !== null) $('#q1').val(q1);*/
+    var EQ1 = sessionStorage.getItem('Q1');
+    if (EQ1 !== null) $('#q1').val(EQ1);
   
-    var Q2 = sessionStorage.getItem('Q2');
-    if (Q2 !== null) $('#q2').val(q2);
+    var EQ2 = sessionStorage.getItem('Q2');
+    if (EQ2 !== null) $('#q2').val(EQ2);
   
-    var Q3 = sessionStorage.getItem('Q3');
-    if (Q3 !== null) $('#q3').val(q3);
+    var EQ3 = sessionStorage.getItem('Q3');
+    if (EQ3 !== null) $('#q3').val(EQ3);
   
-    var Q4 = sessionStorage.getItem('Q4');
-    if (Q4 !== null) $('#q4').val(q4);
+    var EQ4 = sessionStorage.getItem('Q4');
+    if (EQ4 !== null) $('#q4').val(EQ4);
   
-    var Q5 = sessionStorage.getItem('Q5');
-    if (Q5 !== null) $('#q5').val(q5);
+    var EQ5 = sessionStorage.getItem('Q5');
+    if (EQ5 !== null) $('#q5').val(EQ5);
   
-    var Cost = sessionStorage.getItem('Cost');
-  
- 
-        document.getElementById("costp").innerHTML = "Your total cost is = " + Cost;
+    var ccost = sessionStorage.getItem('Cost');
+    document.getElementById("costp").innerHTML = "Your total cost is = " + ccost;
 }
 </script>
 </body>
