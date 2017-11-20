@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>Products</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
  </head>
 <body>
   <div class="header">
@@ -63,31 +63,34 @@
   </table>
   <div class="footer">
     <button id="calculateTotal">Calculate Total</button>
+    <button id="cartPage">View Cart</button>
    <p id="costp"></p>
   </div>
 
 <script>
-
-document.getElementById("calculateTotal").addEventListener("click", validateForm);
-
-function validateForm() {
         spq1 = document.forms["buyQ"]["q1"].value;
         fpq2 = document.forms["buyQ"]["q2"].value;
         seq3 = document.forms["buyQ"]["q3"].value;
         crq4 = document.forms["buyQ"]["q4"].value;
         csq5 = document.forms["buyQ"]["q5"].value;
+  
+document.getElementById("calculateTotal").addEventListener("click", validateForm);
+document.getElementById("calculateTotal").addEventListener("click", function(e){validateForm(spq1,fpq2,seq3,crq4,csq5)}); 
+
+  
+function validateForm(q1,q2,q3,q4,q5) {
 
     if (spq1 == "" && fpq2 == "" && seq3 == "" && crq4 == "" && csq5 == "") 
     {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
     } else {
-      sessionStorage.setItem("Q1", spq1);
-      sessionStorage.setItem("Q2", fpq2);
-      sessionStorage.setItem("Q3", seq3);
-      sessionStorage.setItem("Q4", crq4);
-      sessionStorage.setItem("Q5", csq5);
-      cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
+      sessionStorage.setItem("Q1", q1);
+      sessionStorage.setItem("Q2", q2);
+      sessionStorage.setItem("Q3", q3);
+      sessionStorage.setItem("Q4", q4);
+      sessionStorage.setItem("Q5", q5);
+      cost = ((5*q1)+(5*q2)+(5*q3)+(5*q4)+(5*q5));
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
       sessionStorage.setItem("Cost",cost);
     }
