@@ -106,12 +106,11 @@ function validateForm() {
     var EQ5 = sessionStorage.getItem('Q5');
     var CCost = sessionStorage.getItem('Cost');    
     if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
-    document.getElementById("q1").innerHTML = EQ1;
-   alert("inside-" + EQ1);
+    document.getElementById("q1").value = EQ1;
     document.getElementById("q2").value = EQ2;
-    document.getElementById("q3").innerHTML = EQ3;
-    document.getElementById("q4").innerHTML = EQ4;
-    document.getElementById("q5").innerHTML = EQ5;
+    document.getElementById("q3").value = EQ3;
+    document.getElementById("q4").value = EQ4;
+    document.getElementById("q5").value = EQ5;
   }
   
 
