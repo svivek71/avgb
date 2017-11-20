@@ -79,21 +79,21 @@ document.getElementById("calculateTotal").addEventListener("click", validateForm
 document.getElementById("cartPage").addEventListener("click", function(){validateForm(spq1,fpq2,seq3,crq4,csq5)}); 
 
   
-function validateForm(q1,q2,q3,q4,q5) {
-    alert("q1-" + q1);
-    if (q1 == "" && q2 == "" && q3 == "" && q4 == "" && q5 == "") 
+function validateForm(fq1,fq2,fq3,fq4,fq5) {
+    alert("fq1-" + fq1);
+    if (fq1 == "" && fq2 == "" && fq3 == "" && fq4 == "" && fq5 == "") 
     {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
     } else {
-      cost = ((5*q1)+(5*q2)+(5*q3)+(5*q4)+(5*q5));
-      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
-      sessionStorage.setItem("Q1", q1);
-      sessionStorage.setItem("Q2", q2);
-      sessionStorage.setItem("Q3", q3);
-      sessionStorage.setItem("Q4", q4);
-      sessionStorage.setItem("Q5", q5);
-      sessionStorage.setItem("Cost",cost);
+      fcost = ((5*fq1)+(5*fq2)+(5*fq3)+(5*fq4)+(5*fq5));
+      document.getElementById("costp").innerHTML = "Your total cost is = " + fcost;
+      sessionStorage.setItem("Q1", fq1);
+      sessionStorage.setItem("Q2", fq2);
+      sessionStorage.setItem("Q3", fq3);
+      sessionStorage.setItem("Q4", fq4);
+      sessionStorage.setItem("Q5", fq5);
+      sessionStorage.setItem("Cost",fcost);
     }
   }
 
