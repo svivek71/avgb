@@ -70,7 +70,7 @@
   <script>
 
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
-      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
+
   
 function validateForm() {
   spq1 = document.forms["buyQ"]["q1"].value;
@@ -84,8 +84,8 @@ function validateForm() {
         return false;
     }
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-     /* alert ("cost " + cost);*/
-     return cost;
+      alert ("cost " + cost);
+      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
 
 }
 </script>
