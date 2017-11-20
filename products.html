@@ -33,7 +33,7 @@
         <td>Square puzzle</td>
         <td>5</td>
         <td><input type="text" name ="q1"></td>
-      </tr>
+       </tr>
       <tr>
         <th>Puzzle</th>
         <td>Fixed Piece Puzzle</td>
@@ -68,7 +68,7 @@
   </div>
 
 <script>
-      var spq1 = ParseInt(document.forms["buyQ"]["q1"].value);
+      var spq1 = Number(document.forms["buyQ"]["q1"].value);
         fpq2 = document.forms["buyQ"]["q2"].value;
         seq3 = document.forms["buyQ"]["q3"].value;
         crq4 = document.forms["buyQ"]["q4"].value;
@@ -76,7 +76,7 @@
         alert("spq1-" + spq1);
   
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
-document.getElementById("cartPage").addEventListener("click", function(e){validateForm(spq1,fpq2,seq3,crq4,csq5)}); 
+document.getElementById("cartPage").addEventListener("click", function(){validateForm(spq1,fpq2,seq3,crq4,csq5)}); 
 
   
 function validateForm(q1,q2,q3,q4,q5) {
