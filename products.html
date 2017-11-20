@@ -68,7 +68,7 @@
   
 <script>
 
-document.getElementById("calculateTotal").addEventListener("click", validateForm);
+document.getElementById("calculateTotal").addEventListener("click", validateForm)
   
 function validateForm() {
         spq1 = document.forms["buyQ"]["q1"].value;
@@ -96,7 +96,7 @@ function validateForm() {
     }
 
      window.onload = function() {
-        var EQ1 = parseInt(sessionStorage.getItem('Q1'));
+        var EQ1 = Number(sessionStorage.getItem('Q1'));
           if (EQ1 !==0) $('#q1').val(EQ1);
         var EQ2 = Number(sessionStorage.getItem('Q2'));
           if (EQ2 !== 0) $('#q2').val(EQ2);
