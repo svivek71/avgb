@@ -69,10 +69,7 @@
   
 <script>
 
-document.getElementById("q1").addEventListener("change", function(){
-              sessionStorage.setItem("Q1", $('#q1').val());
-              alert("sessionStorage get-" + EQ1);
-});
+document.getElementById("q1").addEventListener("change", saveUserData);
   
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
@@ -95,13 +92,18 @@ function validateForm() {
         /*window.onbeforeunload = function() {*/
 
          sessionStorage.setItem("Q1", $('#q1').val());
-                alert("sessionStorage set-" + Q1);
+                /*alert("sessionStorage set-" + Q1);*/
          sessionStorage.setItem("Q2", $('#q2').val());
          sessionStorage.setItem("Q3", $('#q3').val());
          sessionStorage.setItem("Q4", $('#q4').val());
          sessionStorage.setItem("Q5", $('#q5').val());  
        /* }*/
     }
+  }
+  
+  function saveUserData() {
+                sessionStorage.setItem("Q1", $('#q1').val());
+                alert("sessionStorage set-" + Q1);   
   }
 
   window.addEventListener("load", function(){
