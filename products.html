@@ -94,6 +94,7 @@ function validateForm() {
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
       alert("sessionStorage set-");
       sessionStorage.setItem("Q1", $('#q1').val());
+      alert("SS set-" + sessionStorage.getItem("Q1"));
       sessionStorage.setItem("Q2", $('#q2').val());
       sessionStorage.setItem("Q3", $('#q3').val());
       sessionStorage.setItem("Q4", $('#q4').val());
