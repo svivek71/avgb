@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
@@ -32,7 +32,7 @@
         <th>Puzzle</th>
         <td>Square puzzle</td>
         <td>5</td>
-        <td><input type="text" name ="q1"></td>
+        <td><input type="text" name ="q1" onchange="saveUserData()"></td>
       </tr>
       <tr>
         <th>Puzzle</th>
@@ -69,7 +69,7 @@
   
 <script>
 
-document.getElementById("q1").addEventListener("change", saveUserData);
+/*document.getElementById("q1").addEventListener("change", saveUserData);*/
   
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
