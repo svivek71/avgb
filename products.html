@@ -64,14 +64,15 @@
   <div class="footer">
    <button id="calculateTotal">Calculate Total</button>
   </div>
+
+<script>
+document.getElementById("calculateTotal").addEventListener("click", validateForm);
+
   spq1 = document.forms["buyQ"]["q1"].value;
   fpq2 = document.forms["buyQ"]["q2"].value;
   seq3 = document.forms["buyQ"]["q3"].value;
   crq4 = document.forms["buyQ"]["q4"].value;
   csq5 = document.forms["buyQ"]["q5"].value;
-  
-<script>
-document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
 function validateForm() {
     var x = spq1 + fpq1 + seq3 + crq4 + csq5;
@@ -80,7 +81,7 @@ function validateForm() {
         return false;
     }
       var cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-      alert (cost + "cost" + document.forms["buyQ"]["spq1"].value);
+      alert (cost + "cost" + document.forms["buyQ"]["q1"].value);
 }
 </script>
 </body>
