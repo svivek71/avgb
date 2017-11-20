@@ -50,6 +50,7 @@
         <th>Coasters</th>
         <td>Round</td>
           <td>5</td>
+
         <td><input type="text" name="q4"></td>
       </tr>
       <tr>
@@ -68,6 +69,11 @@
   
 <script>
 
+document.getElementById("q1").addEventListener("change", function(){
+              sessionStorage.setItem("Q1", $('#q1').val());
+              alert("sessionStorage get-" + EQ1);
+});
+  
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
 function validateForm() {
