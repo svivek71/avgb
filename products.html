@@ -5,12 +5,6 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <script>
-   function saveUserData() {
-                sessionStorage.setItem("Q1", $('#q1').val());
-                alert("sessionStorage set-" + Q1);   
-   }
-   </script>
  </head>
 <body>
   <div class="header">
@@ -93,7 +87,7 @@ function validateForm() {
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
       alert("sessionStorage set-");
-      sessionStorage.setItem("Q1", $('#q1').val());
+      sessionStorage.setItem("Q1", spq1);
       alert("SS set-" + sessionStorage.getItem("Q1"));
       sessionStorage.setItem("Q2", $('#q2').val());
       sessionStorage.setItem("Q3", $('#q3').val());
