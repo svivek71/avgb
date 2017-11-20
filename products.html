@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   </head>
 <body>
-
   <div class="header">
     <div class="container">
       <ul class="nav">
@@ -75,7 +74,7 @@
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
 function validateForm() {
-    var x = document.forms["buyQ"]["spq1"].value;
+    var x = spq1 + fpq1 + seq3 + crq4 + csq5;
     if (x == "") {
         alert("Number must be filled out");
         return false;
