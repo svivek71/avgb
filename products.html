@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
@@ -38,7 +38,7 @@
         <th>Puzzle</th>
         <td>Square puzzle</td>
         <td>5</td>
-        <td><input type="text" name ="q1" onchange="saveUserData()"></td>
+        <td><input type="text" name ="q1"></td>
       </tr>
       <tr>
         <th>Puzzle</th>
@@ -91,11 +91,10 @@ function validateForm() {
         return false;
     } else {
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-      /*alert ("cost " + cost);*/
       if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;};
     
         /*window.onbeforeunload = function() {*/
-
+         alert("sessionStorage set-" + Q1);
          sessionStorage.setItem("Q1", $('#q1').val());
                 /*alert("sessionStorage set-" + Q1);*/
          sessionStorage.setItem("Q2", $('#q2').val());
@@ -106,8 +105,6 @@ function validateForm() {
     }
   }
   
-
-
   window.addEventListener("load", function(){
     var EQ1 = sessionStorage.getItem('Q1');
               alert("sessionStorage get-" + EQ1);
