@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
@@ -62,7 +62,14 @@
       </tbody>
   </table>
   <div class="footer">
-   <button onclick="/scripts/CalculateCost.js">Submit</button>
+   <button id="calculateTotal">Calculate Total</button>
   </div>
+<script>
+document.getElementById("calculateTotal").addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Hello World!");
+}
+</script>
 </body>
 </html>
