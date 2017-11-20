@@ -33,31 +33,31 @@
         <th>Puzzle</th>
         <td>Square puzzle</td>
         <td>5</td>
-        <td><input type="text" name ="spq1" min=0></td>
+        <td><input type="text" name ="q1"></td>
       </tr>
       <tr>
         <th>Puzzle</th>
         <td>Fixed Piece Puzzle</td>
         <td>5</td>
-        <td><input type="text" name ="fpq2"></td>
+        <td><input type="text" name ="q2"></td>
       </tr>
       <tr>
         <th>Earrings</th>
         <td>Small Round</td>
         <td>5</td>
-        <td><input type="text" name ="seq3"></td>
+        <td><input type="text" name ="q3"></td>
       </tr>
       <tr>
         <th>Coasters</th>
         <td>Round</td>
         <td>5</td>
-        <td><input type="text" name="crq4"></td>
+        <td><input type="text" name="q4"></td>
       </tr>
       <tr>
         <th>Coasters</th>
         <td>Square</td>
         <td>5</td>
-        <td><input type="text" name="csq5"></td>
+        <td><input type="text" name="q5"></td>
       </tr>
       </form>
       </tbody>
@@ -65,6 +65,12 @@
   <div class="footer">
    <button id="calculateTotal">Calculate Total</button>
   </div>
+  spq1 = document.forms["buyQ"]["q1"].value;
+  fpq2 = document.forms["buyQ"]["q2"].value;
+  seq3 = document.forms["buyQ"]["q3"].value;
+  crq4 = document.forms["buyQ"]["q4"].value;
+  csq5 = document.forms["buyQ"]["q5"].value;
+  
 <script>
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
@@ -74,8 +80,8 @@ function validateForm() {
         alert("Number must be filled out");
         return false;
     }
-      /*var cost = ((5*window.spq1)+(5*window.fpq2)+(5*window.seq3)+(5*window.crq4)+(5*window.csq5));*/
-      alert ("cost" + document.forms["buyQ"]["spq1"].value);
+      var cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
+      alert (cost + "cost" + document.forms["buyQ"]["spq1"].value);
 }
 </script>
 </body>
