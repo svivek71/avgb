@@ -73,9 +73,9 @@
   var crq4 = document.forms["buyQ"]["q4"].value;
   var csq5 = document.forms["buyQ"]["q5"].value;
 
-document.getElementById("calculateTotal").addEventListener("click", validateForm(spq1));
+document.getElementById("calculateTotal").addEventListener("click", validateForm());
   
-function validateForm(y) {
+function validateForm() {
     x = document.forms["buyQ"]["q1"].value;
     if (x == "") {
         alert("Please fill the desired quantity");
@@ -83,8 +83,8 @@ function validateForm(y) {
     }
       var cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
       /*alert (cost + "cost" + document.forms["buyQ"]["q1"].value);*/
-  alert("here6"+(x*5)+"2-"+ window.y);
-  document.getElementById("demo").innerHTML = "I can display " + window.spq1;
+  alert("here6"+(x*5));
+  document.getElementById("demo").innerHTML = "I can display " + window.x;
 }
 </script>
 </body>
