@@ -91,17 +91,14 @@ function validateForm() {
         return false;
     } else {
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-      if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;};
-    
-        /*window.onbeforeunload = function() {*/
-         alert("sessionStorage set-" + Q1);
-         sessionStorage.setItem("Q1", $('#q1').val());
+      if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
+      alert("sessionStorage set-" + Q1);
+      sessionStorage.setItem("Q1", $('#q1').val());
                 /*alert("sessionStorage set-" + Q1);*/
-         sessionStorage.setItem("Q2", $('#q2').val());
-         sessionStorage.setItem("Q3", $('#q3').val());
-         sessionStorage.setItem("Q4", $('#q4').val());
-         sessionStorage.setItem("Q5", $('#q5').val());  
-       /* }*/
+      sessionStorage.setItem("Q2", $('#q2').val());
+      sessionStorage.setItem("Q3", $('#q3').val());
+      sessionStorage.setItem("Q4", $('#q4').val());
+      sessionStorage.setItem("Q5", $('#q5').val());  
     }
   }
   
