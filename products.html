@@ -63,9 +63,8 @@
   </table>
   <div class="footer">
    <button id="calculateTotal">Calculate Total</button>
+   <p id="costp">Your total cost is =</p>
   </div>
-
-  <p id="costp"></p>
 
   <script>
 
@@ -83,7 +82,7 @@ function validateForm() {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
     }
-      var cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
+      cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
      /* alert ("cost " + cost);*/
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
 
