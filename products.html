@@ -80,13 +80,12 @@ document.getElementById("calculateTotal").addEventListener("click", function(e){
 
   
 function validateForm(q1,q2,q3,q4,q5) {
-
+    alert("q1-" + q1);
     if (q1 == "" && q2 == "" && q3 == "" && q4 == "" && q5 == "") 
     {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
     } else {
-      alert("q1-" + q1);
       cost = ((5*q1)+(5*q2)+(5*q3)+(5*q4)+(5*q5));
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
       sessionStorage.setItem("Q1", q1);
