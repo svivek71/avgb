@@ -100,8 +100,7 @@ function validateForm() {
     var EQ4 = sessionStorage.getItem('Q4');
     var EQ5 = sessionStorage.getItem('Q5');
     var CCost = sessionStorage.getItem('Cost');    
-    alert("EQ1-" + EQ1);
-        if (EQ1 !== null) {document.getElementById("costp").innerHTML = "2Your total cost is = " + CCost}
+    if (CCost !== null) {document.getElementById("costp").innerHTML = "2Your total cost is = " + CCost}
     document.getElementById("q1").innerHTML = EQ1;
     document.getElementById("q2").innerHTML = EQ2;
     document.getElementById("q3").innerHTML = EQ3;
