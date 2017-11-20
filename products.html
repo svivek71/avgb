@@ -86,6 +86,16 @@ function validateForm() {
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
       /*alert ("cost " + cost);*/
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
+  
+      window.onbeforeunload = function() {
+        localStorage.setItem(cost, $('#Cost').val());   
+    }
+  
+}
+
+window.onload = function() {
+    var cost = localStorage.getItem(cost);
+    if (cost !== null) $('#Cost').val(cost);
 }
 </script>
 </body>
