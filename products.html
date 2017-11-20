@@ -87,7 +87,7 @@ function validateForm() {
       if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;};
     
         /*window.onbeforeunload = function() {*/
-          alert("coming here");
+          alert("sessionStorage set");
          sessionStorage.setItem("Q1", $('#q1').val());
          sessionStorage.setItem("Q2", $('#q2').val());
          sessionStorage.setItem("Q3", $('#q3').val());
@@ -99,6 +99,7 @@ function validateForm() {
 
   window.addEventListener("onload", function(){
     var EQ1 = sessionStorage.getItem('Q1');
+              alert("sessionStorage get");
     document.getElementById("costp").innerHTML = "2Your total cost is = " + EQ1;
   }); 
      /*window.onload = function() {
