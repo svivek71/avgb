@@ -77,7 +77,7 @@ function validateForm() {
   
         spq1 = document.forms["buyQ"]["q1"].value;
         fpq2 = document.forms["buyQ"]["q2"].value;
-        seq3 = document.forms["buyQ"]["q3"].value;
+         seq3 = document.forms["buyQ"]["q3"].value;
         crq4 = document.forms["buyQ"]["q4"].value;
         csq5 = document.forms["buyQ"]["q5"].value;
   
@@ -89,7 +89,7 @@ function validateForm() {
     }
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
       /*alert ("cost " + cost);*/
-      if (cost!==null) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
+      if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
     
      if (typeof(Storage) !== "undefined") {
        window.onbeforeunload = function() {
@@ -118,9 +118,11 @@ if (typeof(Storage) !== "undefined") {
   
     var EQ5 = Number(sessionStorage.getItem('Q5'));
     if (EQ5 !== 0) $('#q5').val(EQ5);
-  
+    
+   
     ccost = ((5*EQ1)+(5*EQ2)+(5*EQ3)+(5*EQ4)+(5*EQ5));
-    if (ccost!==null) {document.getElementById("costp").innerHTML = "Your total cost is = " + ccost;}
+    /*if (ccost!==null) {document.getElementById("costp").innerHTML = "Your total cost is = " + ccost;}*/
+   document.getElementById("costp").innerHTML = "Your total cost is = " + EQ1;
  }
 }
 </script>
