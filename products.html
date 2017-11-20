@@ -86,14 +86,14 @@ function validateForm() {
       /*alert ("cost " + cost);*/
       if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;};
     
-        window.onbeforeunload = function() {
+        /*window.onbeforeunload = function() {*/
           alert("coming here");
          sessionStorage.setItem("Q1", $('#q1').val());
          sessionStorage.setItem("Q2", $('#q2').val());
          sessionStorage.setItem("Q3", $('#q3').val());
          sessionStorage.setItem("Q4", $('#q4').val());
          sessionStorage.setItem("Q5", $('#q5').val());  
-        }
+       /* }*/
     }
   }
 
