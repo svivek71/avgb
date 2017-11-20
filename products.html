@@ -29,36 +29,38 @@
       </tr>
     </thead>
     <tbody>
+      <form name="buyQ" onsubmit="return.ValidateForm()">
       <tr>
         <th>Puzzle</th>
         <td>Square puzzle</td>
         <td>5</td>
-        <td><form><input type="text" name ="spq1" min=0></form></td>
+        <td><input type="text" name ="spq1" min=0></td>
       </tr>
       <tr>
         <th>Puzzle</th>
         <td>Fixed Piece Puzzle</td>
         <td>5</td>
-        <td><form><input type="text" name ="fpq2"></form></td>
+        <td><input type="text" name ="fpq2"></td>
       </tr>
       <tr>
         <th>Earrings</th>
         <td>Small Round</td>
         <td>5</td>
-        <td><form><input type="text" name ="seq3"></form></td>
+        <td><input type="text" name ="seq3"></td>
       </tr>
       <tr>
         <th>Coasters</th>
         <td>Round</td>
         <td>5</td>
-        <td><form><input type="text" name="crq4"></form></td>
+        <td><input type="text" name="crq4"></td>
       </tr>
       <tr>
         <th>Coasters</th>
         <td>Square</td>
         <td>5</td>
-        <td><form><input type="text" name="csq5"></form></td>
+        <td><input type="text" name="csq5"></td>
       </tr>
+      </form>
       </tbody>
   </table>
   <div class="footer">
@@ -69,7 +71,15 @@ document.getElementById("calculateTotal").addEventListener("click", myFunction);
 
 function myFunction() {
     var cost = ((5*window.spq1)+(5*window.fpq2)+(5*window.seq3)+(5*window.crq4)+(5*window.csq5));
-    alert ("cost" + document.forms[spq1].value);
+    alert ("cost" + document.forms["buyQ"].["spq1"].value);
+}
+  
+function validateForm() {
+    var x = document.forms["buyQ"]["spq1"].value;
+    if (x == "") {
+        alert("Number must be filled out");
+        return false;
+    }
 }
 </script>
 </body>
