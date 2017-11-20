@@ -65,9 +65,9 @@
    <button id="calculateTotal">Calculate Total</button>
   </div>
 
-  <p id="demo"></p>
-  <script>
+  <p id="costp"></p>
 
+  <script>
 
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
@@ -84,7 +84,8 @@ function validateForm() {
         return false;
     }
       var cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-      alert ("cost " + cost)
+     /* alert ("cost " + cost);*/
+      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
 
 }
 </script>
