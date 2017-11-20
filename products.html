@@ -32,7 +32,7 @@
         <th>Puzzle</th>
         <td>Square puzzle</td>
         <td>5</td>
-        <td><input type="text" name ="q1" onkeyup="formChanged()" onchange="formChanged()"></td>
+        <td><input type="text" name ="q1"></td>
        </tr>
       <tr>
         <th>Puzzle</th>
@@ -68,14 +68,13 @@
   </div>
 
 <script>
-function formChanged() {
-        spq1 = document.getElementsByName("q1")[0].value;
+        spq1 = document.getElementByName("q1")[0].value;
  /*       fpq2 = document.forms["buyQ"]["q2"].value;
         seq3 = document.forms["buyQ"]["q3"].value;
         crq4 = document.forms["buyQ"]["q4"].value;
         csq5 = document.forms["buyQ"]["q5"].value; */
         alert("spq1-" + spq1);
-}
+
   
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
 document.getElementById("cartPage").addEventListener("click", function(){validateForm(spq1)}); 
