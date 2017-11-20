@@ -51,13 +51,13 @@
         <th>Coasters</th>
         <td>Round</td>
         <td>5</td>
-        <td><form><input type="text" name ="crq4"></form></td>
+        <td><form><input type="text" name="crq4"></form></td>
       </tr>
       <tr>
         <th>Coasters</th>
         <td>Square</td>
         <td>5</td>
-        <td><form><input type="text" name ="csq5"></form></td>
+        <td><form><input type="text" name="csq5"></form></td>
       </tr>
       </tbody>
   </table>
@@ -68,8 +68,8 @@
 document.getElementById("calculateTotal").addEventListener("click", myFunction);
 
 function myFunction() {
-    var cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-    alert (cost);
+    var cost = ((5*window.spq1)+(5*window.fpq2)+(5*window.seq3)+(5*window.crq4)+(5*window.csq5));
+    alert ("cost" + window.spq1);
 }
 </script>
 </body>
