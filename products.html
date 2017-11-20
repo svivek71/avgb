@@ -89,7 +89,7 @@ function validateForm() {
     }
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
       /*alert ("cost " + cost);*/
-      if (cost!==null) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
+      if (cost!=="") {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
     
      window.onbeforeunload = function() {
         sessionStorage.setItem("Q1", $('#q1').val());
