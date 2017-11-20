@@ -49,7 +49,7 @@
       <tr>
         <th>Coasters</th>
         <td>Round</td>
-        <td>5</td>
+	      <td>5</td>
         <td><input type="text" name="q4"></td>
       </tr>
       <tr>
@@ -74,7 +74,7 @@ document.getElementById("cartPage").addEventListener("click", validateForm);
 
 
 function validateForm() {
-        sessionStorage.setItem("Q1", document.forms["buyQ"]["q1"].value);
+        sessionStorage.setItem("Q1", document.getElementByName("q1").value);
        	sessionStorage.setItem("Q2", document.forms["buyQ"]["q2"].value);
       	sessionStorage.setItem("Q3", document.forms["buyQ"]["q3"].value);
       	sessionStorage.setItem("Q4", document.forms["buyQ"]["q4"].value);
@@ -86,9 +86,10 @@ function validateForm() {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
     } else {
-           cost = ((5*Q1)+(5*Q2)+(5*Q3)+(5*Q4)+(5*Q5));
-      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
-      sessionStorage.setItem("Cost",cost);
+	 alert("Q1-" + Q1);   
+         cost = ((5*Q1)+(5*Q2)+(5*Q3)+(5*Q4)+(5*Q5));
+         document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
+         sessionStorage.setItem("Cost",cost);
     }
   }
   
