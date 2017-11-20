@@ -33,7 +33,7 @@
         <th>Puzzle</th>
         <td>Square puzzle</td>
         <td>5</td>
-        <td><form><input type="text" name ="spq1"></form></td>
+        <td><form><input type="text" name ="spq1" min=0></form></td>
       </tr>
       <tr>
         <th>Puzzle</th>
@@ -69,7 +69,7 @@ document.getElementById("calculateTotal").addEventListener("click", myFunction);
 
 function myFunction() {
     var cost = ((5*window.spq1)+(5*window.fpq2)+(5*window.seq3)+(5*window.crq4)+(5*window.csq5));
-    alert ("cost" + window.spq1);
+    alert ("cost" + document.forms[spq1].value);
 }
 </script>
 </body>
