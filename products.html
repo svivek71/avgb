@@ -74,7 +74,7 @@ document.getElementById("cartPage").addEventListener("click", validateForm);
 
 
 function validateForm() {
-        sessionStorage.setItem("Q1", document.getElementByName("q1").value);
+        sessionStorage.setItem("Q1", document.forms["buyQ"]["q1"].value);
        	sessionStorage.setItem("Q2", document.forms["buyQ"]["q2"].value);
       	sessionStorage.setItem("Q3", document.forms["buyQ"]["q3"].value);
       	sessionStorage.setItem("Q4", document.forms["buyQ"]["q4"].value);
