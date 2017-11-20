@@ -62,27 +62,21 @@
       </tbody>
   </table>
   <div class="footer">
-
     <button id="calculateTotal">Calculate Total</button>
    <p id="costp"></p>
-    
   </div>
-
-
+  
   <script>
 
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
 function validateForm() {
-  
         spq1 = document.forms["buyQ"]["q1"].value;
         fpq2 = document.forms["buyQ"]["q2"].value;
-         seq3 = document.forms["buyQ"]["q3"].value;
+        seq3 = document.forms["buyQ"]["q3"].value;
         crq4 = document.forms["buyQ"]["q4"].value;
         csq5 = document.forms["buyQ"]["q5"].value;
-  
 
-  
     if (spq1 == "" && fpq2 == "" && seq3 == "" && crq4 == "" && csq5 == "") {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
@@ -91,40 +85,36 @@ function validateForm() {
       /*alert ("cost " + cost);*/
       if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
     
-     if (typeof(Storage) !== "undefined") {
-       window.onbeforeunload = function() {
-        sessionStorage.setItem("Q1", $('#q1').val());
-        sessionStorage.setItem("Q2", $('#q2').val());
-        sessionStorage.setItem("Q3", $('#q3').val());
-        sessionStorage.setItem("Q4", $('#q4').val());
-        sessionStorage.setItem("Q5", $('#q5').val());  
-      }
-     }  
+      if (typeof(Storage) !== "undefined") {
+        window.onbeforeunload = function() {
+         sessionStorage.setItem("Q1", $('#q1').val());
+         sessionStorage.setItem("Q2", $('#q2').val());
+         sessionStorage.setItem("Q3", $('#q3').val());
+         sessionStorage.setItem("Q4", $('#q4').val());
+         sessionStorage.setItem("Q5", $('#q5').val());  
+        }
+       }  
+     }
 }
-    
+
 if (typeof(Storage) !== "undefined") {
  window.onload = function() {
     var EQ1 = Number(sessionStorage.getItem('Q1'));
-    if (EQ1 !== 0) $('#q1').val(EQ1);
-  
+      if (EQ1 !== 0) $('#q1').val(EQ1);
     var EQ2 = Number(sessionStorage.getItem('Q2'));
-    if (EQ2 !== 0) $('#q2').val(EQ2);
-  
+      if (EQ2 !== 0) $('#q2').val(EQ2);
     var EQ3 = Number(sessionStorage.getItem('Q3'));
-    if (EQ3 !== 0) $('#q3').val(EQ3);
-  
+      if (EQ3 !== 0) $('#q3').val(EQ3);
     var EQ4 = Number(sessionStorage.getItem('Q4'));
-    if (EQ4 !== 0) $('#q4').val(EQ4);
-  
+      if (EQ4 !== 0) $('#q4').val(EQ4);
     var EQ5 = Number(sessionStorage.getItem('Q5'));
-    if (EQ5 !== 0) $('#q5').val(EQ5);
-    
+      if (EQ5 !== 0) $('#q5').val(EQ5);  
    
-    ccost = ((5*EQ1)+(5*EQ2)+(5*EQ3)+(5*EQ4)+(5*EQ5));
+    /*ccost = ((5*EQ1)+(5*EQ2)+(5*EQ3)+(5*EQ4)+(5*EQ5));*/
     /*if (ccost!==null) {document.getElementById("costp").innerHTML = "Your total cost is = " + ccost;}*/
    document.getElementById("costp").innerHTML = "Your total cost is = " + EQ1;
  }
-}
+
 </script>
 </body>
 </html>
