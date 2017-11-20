@@ -96,6 +96,7 @@ function validateForm() {
 window.onload = function() {
     var cost = localStorage.getItem(cost);
     if (cost !== null) $('#Cost').val(cost);
+        document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
 }
 </script>
 </body>
