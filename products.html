@@ -84,22 +84,31 @@ function validateForm() {
         alert("Please fill the desired quantity for the product you wish to purchase");
         return false;
     } else {
-      cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
-      alert("sessionStorage set-");
       sessionStorage.setItem("Q1", spq1);
-      alert("SS set-" + sessionStorage.getItem("Q1"));
-      sessionStorage.setItem("Q2", $('#q2').val());
-      sessionStorage.setItem("Q3", $('#q3').val());
-      sessionStorage.setItem("Q4", $('#q4').val());
-      sessionStorage.setItem("Q5", $('#q5').val()); 
+      sessionStorage.setItem("Q2", fpq2);
+      sessionStorage.setItem("Q3", seq3);
+      sessionStorage.setItem("Q4", crq4);
+      sessionStorage.setItem("Q5", csq5);
+      cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
+      sessionStorage.setItem("Cost",cost);
+      document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
     }
   }
   
   window.addEventListener("load", function(){
     var EQ1 = sessionStorage.getItem('Q1');
-              alert("sessionStorage get-" + EQ1);
-    document.getElementById("costp").innerHTML = "2Your total cost is = " + EQ1;
+    var EQ2 = sessionStorage.getItem('Q2');
+    var EQ3 = sessionStorage.getItem('Q3');
+    var EQ4 = sessionStorage.getItem('Q4');
+    var EQ5 = sessionStorage.getItem('Q5');
+    var CCost = sessionStorage.getItem('Cost');    
+
+    document.getElementById("q1").innerhtml = EQ1
+    document.getElementById("q2").innerhtml = EQ2
+    document.getElementById("q3").innerhtml = EQ3
+    document.getElementById("q4").innerhtml = EQ4
+    document.getElementById("q5").innerhtml = EQ5
+    document.getElementById("costp").innerHTML = "2Your total cost is = " + CCost;
   }); 
      /*window.onload = function() {
         var EQ1 = sessionStorage.getItem('Q1');
