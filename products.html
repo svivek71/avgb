@@ -75,7 +75,7 @@
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
 function validateForm() {
-    x = document.forms["buyQ"]["q1"].value;
+    var x = document.forms["buyQ"]["q1"].value;
     if (x == "") {
         alert("Number must be filled out");
         return false;
