@@ -73,10 +73,10 @@ document.getElementById("cartPage").addEventListener("click", validateForm);
 
 function validateForm() {
         spq1 = document.getElementById("q1").value;
-        fpq2 = document.forms["buyQ"]["q2"].value;
-        seq3 = document.forms["buyQ"]["q3"].value;
-        crq4 = document.forms["buyQ"]["q4"].value;
-        csq5 = document.forms["buyQ"]["q5"].value;
+        fpq2 = document.getElementById("q2").value;
+        seq3 = document.getElementById("q3").value;
+        crq4 = document.getElementById("q4").value;
+        csq5 = document.getElementById("q5").value;
 
     if (spq1 == "" && fpq2 == "" && seq3 == "" && crq4 == "" && csq5 == "") 
     {
