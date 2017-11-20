@@ -37,7 +37,7 @@
       <tr>
         <th>Puzzle</th>
         <td>Fixed Piece Puzzle</td>
-        <td>5</td>
+        <td>5</td>        
         <td><input type="text" name ="q2"></td>
       </tr>
       <tr>
@@ -66,7 +66,7 @@
    <p id="costp"></p>
   </div>
   
-  <script>
+<script>
 
 document.getElementById("calculateTotal").addEventListener("click", validateForm);
   
@@ -83,10 +83,9 @@ function validateForm() {
         return false;
     }
       cost = ((5*spq1)+(5*fpq2)+(5*seq3)+(5*crq4)+(5*csq5));
-      alert ("cost " + cost);
+      /*alert ("cost " + cost);*/
       if (cost!==0) {document.getElementById("costp").innerHTML = "Your total cost is = " + cost;}
     
-      /*if (typeof(Storage) !== "undefined") */
         window.onbeforeunload = function() {
          sessionStorage.setItem("Q1", $('#q1').val());
          sessionStorage.setItem("Q2", $('#q2').val());
@@ -94,12 +93,11 @@ function validateForm() {
          sessionStorage.setItem("Q4", $('#q4').val());
          sessionStorage.setItem("Q5", $('#q5').val());  
         }
-       /*}*/  
     }
 
      window.onload = function() {
         var EQ1 = parseInt(sessionStorage.getItem('Q1'));
-          $('#q1').val(EQ1);
+          if (EQ1 !==0) $('#q1').val(EQ1);
         var EQ2 = Number(sessionStorage.getItem('Q2'));
           if (EQ2 !== 0) $('#q2').val(EQ2);
         var EQ3 = Number(sessionStorage.getItem('Q3'));
@@ -115,6 +113,8 @@ function validateForm() {
      }
 }
 
+      /*if (typeof(Storage) !== "undefined") */
+       /*}*/ 
 </script>
 </body>
 </html>
