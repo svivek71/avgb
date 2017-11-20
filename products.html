@@ -88,14 +88,14 @@ function validateForm() {
       document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
   
       window.onbeforeunload = function() {
-        localStorage.setItem(cost, $('#Cost').val());   
+        localStorage.setItem(cost, $('#cost').val());   
     }
   
 }
 
 window.onload = function() {
     var cost = localStorage.getItem(cost);
-    if (cost !== null) $('#Cost').val(cost);
+    if (cost !== null) $('#cost').val(cost);
         document.getElementById("costp").innerHTML = "Your total cost is = " + cost;
 }
 </script>
