@@ -5,7 +5,13 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  </head>
+   <script>
+   function saveUserData() {
+                sessionStorage.setItem("Q1", $('#q1').val());
+                alert("sessionStorage set-" + Q1);   
+   }
+   </script>
+ </head>
 <body>
   <div class="header">
     <div class="container">
@@ -49,8 +55,7 @@
       <tr>
         <th>Coasters</th>
         <td>Round</td>
-          <td>5</td>
-
+        <td>5</td>
         <td><input type="text" name="q4"></td>
       </tr>
       <tr>
@@ -101,10 +106,7 @@ function validateForm() {
     }
   }
   
-  function saveUserData() {
-                sessionStorage.setItem("Q1", $('#q1').val());
-                alert("sessionStorage set-" + Q1);   
-  }
+
 
   window.addEventListener("load", function(){
     var EQ1 = sessionStorage.getItem('Q1');
