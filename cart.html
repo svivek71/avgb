@@ -6,14 +6,28 @@
     <title>Cart</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> 
     <script>
-       window.addEventListener("load", function(){
-          alert("hidding rows");
+    window.addEventListener("load", changeVisibility);
+                    
+    function changeVisibility() {
           document.getElementById("r1").style.visibility="hidden";
           document.getElementById("r2").style.visibility="hidden";
           document.getElementById("r3").style.visibility="hidden";
           document.getElementById("r4").style.visibility="hidden";
           document.getElementById("r5").style.visibility="hidden";
-       });
+
+      var EQ1 = sessionStorage.getItem('Q1');
+      var EQ2 = sessionStorage.getItem('Q2');
+      var EQ3 = sessionStorage.getItem('Q3');
+      var EQ4 = sessionStorage.getItem('Q4');
+      var EQ5 = sessionStorage.getItem('Q5');
+      var CCost = sessionStorage.getItem('Cost');    
+      if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
+      if (EQ1 !== "") {document.getElementById("r1").style.visibility="show"; 
+                       alert("showing row1"); 
+                       document.getElementById("q1").value = EQ1;
+                       }
+  
+    }
     </script>
  </head>
 <body>
@@ -63,7 +77,7 @@
       </tr>
       <tr id="r5">
         <th>Coasters</th>
-        <td>Square</td
+        <td>Square</td>
         <td>5</td>
         <td id ="q5"></td>
       </tr>
@@ -74,22 +88,6 @@
   </table>
   
   <script>  
-
-    var EQ1 = sessionStorage.getItem('Q1');
-    var EQ2 = sessionStorage.getItem('Q2');
-    var EQ3 = sessionStorage.getItem('Q3');
-    var EQ4 = sessionStorage.getItem('Q4');
-    var EQ5 = sessionStorage.getItem('Q5');
-    var CCost = sessionStorage.getItem('Cost');    
-    if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
-    if (EQ1 !== "") {document.getElementById("r1").style.visibility="show"; 
-                     alert("showing row1"); 
-                     document.getElementById("q1").value=EQ1;
-                     }
-  
-
-    
-                          
   </script>
   
   
