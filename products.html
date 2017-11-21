@@ -68,7 +68,7 @@
 <script>
   
 document.getElementById("calculateTotal").addEventListener("click", validateForm);  
-document.getElementById("cartPage").addEventListener("click", validateForm);  
+document.getElementById("cartPage").addEventListener("click", function(){validateForm();loadCartPage()});  
 window.addEventListener("load", reloadPageVariables);
 
 
@@ -113,6 +113,9 @@ function validateForm() {
     document.getElementById("q5").value = EQ5;
   }
   
+ function loadCartPage(){
+ alert("working on cart page");
+ }
 
 </script>
 </body>
