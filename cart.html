@@ -18,3 +18,14 @@
     </div>
   </div>
   
+  <p id="costp"></p>
+  
+  <script>
+    var EQ1 = sessionStorage.getItem('Q1');
+    var EQ2 = sessionStorage.getItem('Q2');
+    var EQ3 = sessionStorage.getItem('Q3');
+    var EQ4 = sessionStorage.getItem('Q4');
+    var EQ5 = sessionStorage.getItem('Q5');
+    var CCost = sessionStorage.getItem('Cost');    
+    if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
+  </script>
