@@ -5,6 +5,15 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>Cart</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> 
+    <script>
+       window.addEventListener("load", function(){
+      alert("hidding rows")
+      document.getElementById("r1").style.visibility="hidden";
+      document.getElementById("r2").style.visibility="hidden";
+      document.getElementById("r3").style.visibility="hidden";
+      document.getElementById("r4").style.visibility="hidden";
+      document.getElementById("r5").style.visibility="hidden";
+    </script>
  </head>
 <body>
   <div class="header">
@@ -49,13 +58,13 @@
         <th>Coasters</th>
         <td>Round</td>
         <td>5</td>
-        <td id="q4"></td>
+        <td id ="q4"></td>
       </tr>
       <tr id="r5">
         <th>Coasters</th>
         <td>Square</td
         <td>5</td>
-        <td id="q5"></td>
+        <td id ="q5"></td>
       </tr>
       </tbody>
     <tfooter>
@@ -77,14 +86,7 @@
                      document.getElementById("q1").value=EQ1;
                      }
   
-    window.addEventListener("load", function(){
-      alert("hidding rows")
-      document.getElementById("r1").style.visibility="hidden";
-      document.getElementById("r2").style.visibility="hidden";
-      document.getElementById("r3").style.visibility="hidden";
-      document.getElementById("r4").style.visibility="hidden";
-      document.getElementById("r5").style.visibility="hidden";
-    }
+
     
                           
   </script>
