@@ -19,7 +19,7 @@ html, body {
   overflow-y: auto;
 }
 
-.nav li {
+.mainnav li {
   color: Azure;
   display: inline;
   margin: 0 25px;
