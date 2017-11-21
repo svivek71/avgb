@@ -26,11 +26,45 @@
         <th>Quantity</th>
       </tr>
     </thead>
+     <tbody>
+      <tr id="r1">
+        <th>Puzzle</th>
+        <td>Square puzzle</td>
+        <td>5</td>
+        <td id ="q1"></td>
+      </tr>
+      <tr id="r2">
+        <th>Puzzle</th>
+        <td>Fixed Piece Puzzle</td>
+        <td>5</td>        
+        <td id ="q2"></td>
+      </tr>
+      <tr id="r3">
+        <th>Earrings</th>
+        <td>Small Round</td>
+        <td>5</td>
+        <td id ="q3"></td>
+      </tr>
+      <tr id="r4">
+        <th>Coasters</th>
+        <td>Round</td>
+        <td>5</td>
+        <td id="q4"></td>
+      </tr>
+      <tr id="r5">
+        <th>Coasters</th>
+        <td>Square</td
+        <td>5</td>
+        <td id="q5"></td>
+      </tr>
+      </tbody>
     <tfooter>
     <p id="costp"></p>
     </footer>
   </table>
-  <script>
+  
+  <script>  
+
     var EQ1 = sessionStorage.getItem('Q1');
     var EQ2 = sessionStorage.getItem('Q2');
     var EQ3 = sessionStorage.getItem('Q3');
@@ -38,6 +72,21 @@
     var EQ5 = sessionStorage.getItem('Q5');
     var CCost = sessionStorage.getItem('Cost');    
     if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
+    if (EQ1 !== "") {document.getElementById("r1").style.visibility="show"; 
+                     alert("showing row1"); 
+                     document.getElementById("q1").value=EQ1;
+                     }
+  
+    window.addEventListener("load", function(){
+      alert("hidding rows")
+      document.getElementById("r1").style.visibility="hidden";
+      document.getElementById("r2").style.visibility="hidden";
+      document.getElementById("r3").style.visibility="hidden";
+      document.getElementById("r4").style.visibility="hidden";
+      document.getElementById("r5").style.visibility="hidden";
+    }
+    
+                          
   </script>
   
   
