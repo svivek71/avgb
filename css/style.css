@@ -9,7 +9,7 @@ html, body {
   padding: 0 10px;
 } 
 
-.nav {
+.mainnav {
   list-style-type: none;
   position:fixed;
   margin:0 15%;
@@ -196,7 +196,7 @@ th, td {
   width: 77%;
 }
 
-.footer {
+.mfooter {
   display: block;
   margin: auto;
   width: 50%;
