@@ -92,10 +92,16 @@
     </table>
   <div class="footer">
     <p id="costp"></p>
-    <button id="calculateTotal">Change Quantity</button>
+    <button id="changeQuantity">Change Quantity</button>
   </div>
   
-  <script>  
+  <script>
+
+    document.getElementById("changeQuantity").addEventListener("click", loadProducts);  
+     
+     function loadProducts(){
+        window.location.href="products.html";
+     }
   </script>
   
   
