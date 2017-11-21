@@ -93,15 +93,22 @@
   <div class="footer">
     <p id="costp"></p>
     <button id="changeQuantity">Change Quantity</button>
+    <button id="checkout">Proceed to Checkout</button>
   </div>
   
   <script>
 
-    document.getElementById("changeQuantity").addEventListener("click", loadProducts);  
+    document.getElementById("changeQuantity").addEventListener("click", loadProducts); 
+    document.getElementById("checkout").addEventListener("click", checkoutProceed); 
      
      function loadProducts(){
         window.location.href="products.html";
      }
+      
+     function checkoutProceed() {
+       alert("Work in Progress!");
+     }
+             
   </script>
   
   
