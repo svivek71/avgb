@@ -22,6 +22,8 @@
       var EQ5 = sessionStorage.getItem('Q5');
       var CCost = sessionStorage.getItem('Cost');    
       if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
+      if (EQ1 !== "") {document.getElementById("q1").innerHTML = EQ1;}
+                      else {document.getElementById("r1").style.visibility="hidden";}              
       if (EQ5 == "") {document.getElementById("r5").style.visibility="hidden";} 
   
     }
