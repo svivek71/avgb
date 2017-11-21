@@ -9,11 +9,6 @@
     window.addEventListener("load", changeVisibility);
                     
     function changeVisibility() {
-          /*document.getElementById("r1").style.visibility="hidden";
-          document.getElementById("r2").style.visibility="hidden";
-          document.getElementById("r3").style.visibility="hidden";
-          document.getElementById("r4").style.visibility="hidden";
-          document.getElementById("r5").style.visibility="hidden";*/
 
       var EQ1 = sessionStorage.getItem('Q1');
       var EQ2 = sessionStorage.getItem('Q2');
@@ -23,15 +18,15 @@
       var CCost = sessionStorage.getItem('Cost');    
       if (CCost !== null) {document.getElementById("costp").innerHTML = "Your total cost is = " + CCost}
       if (EQ1 !== "") {document.getElementById("q1").innerHTML = EQ1;}
-                      else {document.getElementById("r1").style.visibility="hidden";}              
+                      else {document.getElementById("r1").style.display="none";}              
       if (EQ2 !== "") {document.getElementById("q2").innerHTML = EQ2;}
-                      else {document.getElementById("r2").style.visibility="hidden";}              
+                      else {document.getElementById("r2").style.display="none";}              
       if (EQ3 !== "") {document.getElementById("q3").innerHTML = EQ3;}
-                      else {document.getElementById("r3").style.visibility="hidden";}              
+                      else {document.getElementById("r3").style.display="none";}              
       if (EQ4 !== "") {document.getElementById("q4").innerHTML = EQ4;}
-                      else {document.getElementById("r4").style.visibility="hidden";}              
+                      else {document.getElementById("r4").style.display="none";}              
       if (EQ5 !== "") {document.getElementById("q5").innerHTML = EQ5;}
-                      else {document.getElementById("r5").style.visibility="hidden";}              
+                      else {document.getElementById("r5").style.display="none";}              
 
         
     }
